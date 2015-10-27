@@ -14,7 +14,7 @@ class Bot(ircbot.SingleServerIRCBot):
         message = ev.arguments()[0]
         if "coupon: " in message or "coupon: " in message:
             var = message[0:40]
-            serv.privmsg("#pathwar-fr", "Tu arrive trop tard pour valider "+var + "  PD VA!")
+            serv.privmsg("#pathwar-fr", "Tu arrive trop tard pour valider "+var)
     def on_kick(self, serv, ev):
         serv.join("#pathwar-fr")
 if __name__ == "__main__":
